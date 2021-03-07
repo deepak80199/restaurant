@@ -1,0 +1,24 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "this is a restaurant site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"npm run lite",
+    "lite":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepak80199/restaurant.git"
+  },
+  "author": "Deepak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepak80199/restaurant/issues"
+  },
+  "homepage": "https://github.com/deepak80199/restaurant#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
