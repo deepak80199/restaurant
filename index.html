@@ -1,7 +1,127 @@
 <!DOCTYPE HTML>
 <HEAD>
-	<title>restaurant</title>
+	<title>The Cafe</title>
+	 <!-- Required meta tags always come first -->
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 <meta http-equiv="x-ua-compatible" content="ie=edge">
+ 
+	 <!-- Bootstrap CSS -->
+	 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 </HEAD>
 <BODY>
-	<H1>this is header</H1>
+	
+	<!-- BOOTSTRAP GRID 
+		<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-sm-5"></div>
+			<div class="col-sm-7"></div>
+			tells that for small screen size components should take 5 and 7 columns respectively 
+			we can use .col- (extra small screeen), .col-sm-, .col-md-, .col-lg-, .col-xl-
+			col-auto can also be used to automatically use the remaining col
+			we can use order-sm-x ,where x=1-12,first,last
+			we can also use offset-sm-1
+			nesting is also allowed
+		</div>
+	</div> -->
+
+	<header class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6">
+					<h1>The Cafe</h1>
+					<p>We serve the best pizzas and burgers inspired by the cusines around the world </p>
+				</div>
+
+				<div class="col-12 col-sm"></div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div>
+			
+			<div class="row"> 
+				<div class="col-12 col-sm-6 col-md-3">
+					<h3>Our Fingerlicking Culinary Creations</h3>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-3">
+					<h2>Desi Burger</h2>
+					<p>A burger with indian spices and indian whole wheat bread</p>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-3">
+					<h2>Desi Pizza</h2>
+					<p>A pizza with sauce made of indian spices and with topping of indian organic veggies</p>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-3">
+					<h2>Desi Burger Pizza</h2>
+					<p>a cobinatiion of burger and pizza with indian twist </p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-sm-4 col-md-3">
+					<h3>Meet our Culinary Specialist</h3>
+				</div>
+				<div class="col-12 col-sm-4 col-md-3">
+					<h2>Sanjeev Kapoor</h2>
+					<h4>Executive Chef</h4>
+					<p>Award winning 5 start chef ,with years of experience and also judge of indias top cooking show </p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div>
+		<footer>
+			<div class="container">
+
+				<div class="row">
+					<div class="col-4 offset-1 col-sm-2">
+						<h5>Links</h5>
+						<ul>
+							<li>Home</li>
+							<li>About</li>
+							<li>Menu</li>
+							<li>Contact</li>
+						</ul>
+					</div>
+
+					<div class="col-7 col-sm-5">
+						<h5>Our Address</h5>
+						<p>121,food court,whitefield</p>
+						<p>Bengaluru</p>
+						<p>Karnataka,India</p>
+						<p>Tel:+8707008979</p>
+						<p>Email:thecafe@food.net</p>
+					</div>
+
+					<div class="col-12 col-sm-4">
+						<a href="#">Facebook</a>
+						<a href="#">Linkedin</a>
+						<a href="#">Twitter</a>
+						<a href="#">YouTube</a>
+						<a href="#">Mail</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-auto">
+						@Copyright 2020 The Cafe
+					</div>
+				</div>
+
+			</div>
+		</footer>
+	</div>
+
+
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </BODY>
