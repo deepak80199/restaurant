@@ -1,3 +1,9 @@
+body{
+    padding:50px 0px 0px 0px;
+    /*to ensure space for fixed navbar*/
+    z-index=0;
+}
+
 .row-header{
     margin:0px auto;
     padding: 0px auto;
@@ -24,7 +30,7 @@
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
     background-color: #2a2a72;
-background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
     color: floralwhite;
 
 }
@@ -32,6 +38,11 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 .address{
     font-size: 80%;
     margin: 0px;
+}
+
+.navbar-dark{
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #009ffd 0%,#2a2a72 50%);
 }
 
 .colours
