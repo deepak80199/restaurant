@@ -9,6 +9,8 @@
 	 <!-- Bootstrap CSS -->
 	 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 </HEAD>
 <BODY>
 	
@@ -35,7 +37,7 @@
 			nav-items for each li and nav-link for each a ,active to set default active 
 	to get the toggle button we add navbar-toggler class to button ,data-toggle =collapse
 	data-target is the id of data to be toggled hide and unhide 
-	we add the same id to the div around the list div and give it toggle class collapse,navbar-collapse
+	we add the same id to the div around the list div and give it toggle class collapse,navbar-collapse 
 	
 		-->
 	<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
@@ -48,10 +50,10 @@
 		
 			<div class="collapse navbar-collapse" id="navbar">	
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-items active"><a  class="nav-link" href="#">Home</a></li>
-					<li class="nav-items"><a  class="nav-link" href="aboutus.html">About Us</a></li>
-					<li class="nav-items"><a  class="nav-link" href="#">Menu</a></li>
-					<li class="nav-items"><a  class="nav-link" href="#">Contact</a></li>
+					<li class="nav-items active"><a  class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+					<li class="nav-items"><a  class="nav-link" href="aboutus.html"><span class="fa fa-info-circle fa-lg"></span> About Us</a></li>
+					<li class="nav-items"><a  class="nav-link" href="#"><span class="fa fa-list-alt fa-lg"></span> Menu</a></li>
+					<li class="nav-items"><a  class="nav-link" href="#"><span class="fa fa-address-book fa-lg"></span> Contact</a></li>
 				</ul>
 			</div>
 		
@@ -127,17 +129,18 @@
 						<p>121,food court,whitefield</p>
 						<p>Bengaluru</p>
 						<p>Karnataka,India</p>
-						<p>Tel:+8707008979</p>
-						<p>Email:thecafe@food.net</p>
+						<p><i class="fa fa-mobile fa-lg"></i> :+8707008979</p>
+						<p><i class="fa fa-envelope"></i>:thecafe@food.net</p>
 					</div>
 
 					<div class="col-12 col-sm-4 align-self-center">
 						<div class="text-center">
-							<a href="#">Facebook</a>
-							<a href="#">Linkedin</a>
-							<a href="#">Twitter</a>
-							<a href="#">YouTube</a>
-							<a href="#">Mail</a>
+							<a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+							<a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+							<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+							<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+							<a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+							<a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
 						</div>
 					</div>
 				</div>
@@ -158,3 +161,11 @@
 		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </BODY>
+<!-- npm install font-awesome to install font awesome
+	fa icons can be added on i tag or span tag 
+	 class= fa /fas where s=solid or r=regular ,fa-lg for large icons
+
+	npm install bootstrap-social --save
+	class=btn ,btn-social-icon and btn-respective_name must be added to add social buttons 
+	with fa icons 
+ 	 -->
