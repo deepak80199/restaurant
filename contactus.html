@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<HEAD>
+	<title>The Cafe</title>
+	 <!-- Required meta tags always come first -->
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 <meta http-equiv="x-ua-compatible" content="ie=edge">
+ 
+	 <!-- Bootstrap CSS -->
+	 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+</HEAD>
+<BODY>
+
+	<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">The Cafe</a>	
+		</div>	
+		
+			<div class="collapse navbar-collapse" id="navbar">	
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-items"><a  class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+					<li class="nav-items"><a  class="nav-link" href="aboutus.html"><span class="fa fa-info-circle fa-lg"></span> About Us</a></li>
+					<li class="nav-items"><a  class="nav-link" href="#"><span class="fa fa-list-alt fa-lg"></span> Menu</a></li>
+					<li class="nav-items active"><a  class="nav-link" href="#"><span class="fa fa-address-book fa-lg"></span> Contact</a></li>
+				</ul>
+			</div>
+		
+	</nav>
+
+	<header class="jumbotron">
+		<div class="container">
+			<div class="row row-header align-items-center">
+				<div class="col-12 col-sm-6">
+					<h1><b>Cafe</b></h1>
+					<p>We serve the best pizzas and burgers inspired by the cusines around the world </p>
+				</div>
+
+				<div class="col-12 col-sm"></div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div>
+
+			<ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">Contact Us</li>
+            </ol>
+
+			<div class="row row-content align-items-center"> 
+				<div class="col-12 ">
+					<h2><b> Contact Us</b> </h2>
+				</div>
+
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <p>121,food court,whitefield</p>
+                    <p>Bengaluru</p>
+                    <p>Karnataka,India</p>
+                    <p><i class="fa fa-mobile fa-lg"></i> :+8707008979</p>
+                    <p><i class="fa fa-envelope "></i>:thecafe@food.net</p>
+                </div>
+
+                <div class="col-12 col-sm-3">
+                    MAP
+                </div>
+				
+                <!-- button group is used to add few buttons grouped together
+                        using  classes btn-group and role group for div, and role=button for anchor tags -->
+                <div class="col-12 col-sm-11 offset-sm-1">
+                    <div class="btn-group " role="group"></div>
+                    <a role="button" class="btn btn-primary" href="tel:+8707008979"><i class="fa fa-phone">Call</i></a>
+                    <a role="button" class="btn btn-info"><i class="fa fa-skype">Skype</i></a>
+                    <a role="button" class="btn btn-success" href="mailto:deepak.pandey80199@gmail.com"><i class="fa fa-envelope">Email</i></a>
+                </div>
+				
+			</div>
+
+            <div class="row row-content">
+                <div class="col-12">
+                    <h2>Send us your Feedback</h2>
+                </div>
+
+                <!-- for-group row classes can be applied to make form rows 
+                    col-form-label class can be applied to label tag
+                    and form-control class can be applied to input 
+                        form follows bootstrap grid
+                        to add the checkbox use class form-check-input for input 
+                        and class form-check-label for label
+                        select can be added with select class="form-control"
+                     --> 
+
+                <div class="col-12 col-md-9">
+                    <form>
+                        <div class="form-group row">
+                            <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                            <div class="col-5 col-md-3">
+                                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                            </div>
+                            <div class="col-7 col-md-7">
+                                <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-5 offset-md-2">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                    <label class="form-check-label" for="approve">
+                                        <strong>May we contact you?</strong>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 offset-md-1">
+                                <select class="form-control">
+                                    <option>Tel.</option>
+                                    <option>Email</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">Send Feedback</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+    
+    
+                </div>
+            </div>
+
+		</div>
+	</div>
+
+	<div>
+		<footer class="footer"> 
+			<div class="container">
+
+				<div class="row">
+					<div class="col-4 offset-1 col-sm-2">
+						<h5><b> Links</b> </h5>
+						<ul class="list-unstyled">
+							<li><a href="index.html"> Home</a></li>
+							<li><a href="aboutus.html"> About</a></li>
+							<li>Menu</li>
+							<li>Contact</li>
+						</ul>
+					</div>
+
+				
+
+					<!-- <div class="col-12 col-sm-4 align-self-center">
+						<div class="text-center">
+							<a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+							<a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+							<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+							<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+							<a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+							<a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+						</div>
+					</div>
+				</div> -->
+
+				<div class="row justify-content-center">
+					<div class="col-auto ">
+						@Copyright 2020 The Cafe
+					</div>
+				</div>
+
+			</div>
+		</footer>
+	</div>
+
+
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</BODY>

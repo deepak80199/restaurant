@@ -45,6 +45,14 @@ body{
     background-image: linear-gradient(315deg, #009ffd 0%,#2a2a72 50%);
 }
 
+.fa-envelope-o
+{
+    background-color: rgb(192, 68, 68);
+    color:floralwhite;
+    border-style: solid;
+    border-color: rgb(209, 31, 31);
+}
+
 .colours
 {
     color: #f2f2f2;
