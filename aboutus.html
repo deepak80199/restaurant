@@ -19,7 +19,7 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand" href="index.html">The Cafe</a>	
+			<a class="navbar-brand mr-auto" href="index.html"><img src="img/logo.png" height="30" width="41"></a>	
 		</div>	
 		
 			<div class="collapse navbar-collapse" id="navbar">	
@@ -41,7 +41,9 @@
 					<p>We serve the best pizzas and burgers inspired by the cusines around the world </p>
 				</div>
 
-				<div class="col-12 col-sm"></div>
+				<div class="col-12 col-sm align-self-center">
+					<img src="img/logo.png" class="img-fluid" height="300" width="400">
+				</div>
 		</div>
 	</header>
 
@@ -63,6 +65,42 @@
 					<p>We serve the best fast food with desi tadka which will surprise your taste bud and give you a zing. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque omnis sequi quibusdam provident ex odio sit vero fugit facere! Recusandae dolore sit vero adipisci modi ipsum placeat voluptas necessitatibus amet.</p>
 				</div>
 
+				<!-- we can add card using class "card" ,with header using card-header class
+				we use dd(description data ) and dt (description list) tags inside description list (dl tag) -->
+
+				<div class="col-sm">
+					<div class="card">
+						<h3 class="card-header bg-primary text-white ">
+							Facts at glance
+						</h3>
+						<div class="card-body">
+							<dl class="row">
+								<dt class="col-6">Started</dt>
+                            <dd class="col-6">3 Feb. 2018</dd>
+                            <dt class="col-6">Major Stake Holder</dt>
+                            <dd class="col-6">Bengaluru Fine Foods Inc.</dd>
+                            <dt class="col-6">Last Year's Turnover</dt>
+                            <dd class="col-6">1,12,50,375 Rs</dd>
+                            <dt class="col-6">Employees</dt>
+                            <dd class="col-6">50</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<div class="card card-body bg-light">
+						<blockquote class="blockquote">
+							<p class="mb-0">You better cut the pizza in four pieces because
+								I'm not hungry enough to eat six.</p>
+							<footer class="blockquote-footer">Yogi Berra,
+								<cite title="Source Title">The Wit and Wisdom of Yogi Berra,
+								P. Pepe, Diversion Books, 2014</cite>
+							</footer>
+						</blockquote>
+					</div>
+				</div>
+
 				<div class="col-12 ">
                     <h2><b>Corporate Leadership</b></h2>
 					<h2>Deepak Pandey</h2>
@@ -74,6 +112,44 @@
 					<h2>Piyush Gautam</h2>
                     <h5>Tech Head</h5>
 					<p class="d-none d-md-block">The tech genius who handles the website and other tech related stuff.</p>
+				</div>
+			</div>
+
+			<div class="row row-content">
+				<div class="col-12 col-sm-9">
+					<h2>Facts & Figures</h2>
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead class="thead-dark">
+								<tr>
+									<th> </th>
+									<th>2017</th>
+									<th>2018</th>
+									<th>2019</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Employees</th>
+									<td>15</td>
+									<td>30</td>
+									<td>50</td>
+								</tr>
+								<tr>
+									<th>Guests Served</th>
+									<td>15000</td>
+									<td>45000</td>
+									<td>100000</td>
+								</tr>
+								<tr>
+									<th>Annual Turnover</th>
+									<td>25L</td>
+									<td>50L</td>
+									<td>1Cr</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 

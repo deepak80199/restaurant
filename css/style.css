@@ -1,6 +1,6 @@
 body{
     padding:50px 0px 0px 0px;
-    /*to ensure space for fixed navbar*/
+    /*to ensure space for fixed navbar or else navbar will cover jumbotron */
     z-index=0;
 }
 
@@ -60,5 +60,9 @@ body{
     color: #f4fffb;
     color: #81d0e8;
     color: #71a1d1;
+}
+.thead-dark{
+   
+    background-color: #2a2a72;
 }
 

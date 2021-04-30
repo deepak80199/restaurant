@@ -5,6 +5,14 @@
 	 <meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	 <meta http-equiv="x-ua-compatible" content="ie=edge">
+	 <!-- The viewport meta tag ensures that the screen width is set to the device width and the content is rendered with this width in mind.
+		 This brings us to the second issue, designing the websites to be responsive to the size of the viewport.
+		  This is where the Bootstrap grid system comes to our aid.
+		   Bootstrap makes available four sizes, xs for extra small, sm for small, md for medium and lg for large screen sizes. 
+		   We have already seen the basics of responsive design. In this exercise, we will employ the Bootstrap grid classes to design the websites. 
+		   We would like our website to have the content stacked on extra small devices, but become horizontal within each row for smaller devices and beyond. 
+		   Towards this goal, we will make use of the classes .col-*, .col-sm-*, col-md-*, and .col-lg-* for defining the layouts for the various device sizes.
+		    We can specify how many columns each piece of content will occupy within a row, all adding up to 12 or a multiple thereof. -->
  
 	 <!-- Bootstrap CSS -->
 	 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -45,7 +53,9 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand" href="#">The Cafe</a>	
+			<a class="navbar-brand" href="#">
+				<a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+			</a>	
 		</div>	
 		
 			<div class="collapse navbar-collapse" id="navbar">	
@@ -67,7 +77,10 @@
 					<p>We serve the best pizzas and burgers inspired by the cusines around the world </p>
 				</div>
 
-				<div class="col-12 col-sm"></div>
+				<!-- we can use img tag to add image ,class="img-fluid" for responsiveness -->
+				<div class="col-12 col-sm align-self-center">
+					<img src="img/logo.png" class="img-fluid" height="300" width="400">
+				</div>
 		</div>
 	</header>
 
@@ -75,34 +88,65 @@
 		<div>
 			
 			<div class="row row-content align-items-center"> 
-				<div class="col-12 col-sm-6 col-md-3">
+				<div class="col-12 col-sm-4 order-sm-last col-md-3">
 					<h3><b> Our Fingerlicking Culinary Creations</b> </h3>
 				</div>
-
-				<div class="col-12 col-sm-6 col-md-3">
-					<h2>Desi Burger</h2>
-					<p>A burger with indian spices and indian whole wheat bread</p>
+				<!-- image can be added with meadia object using classes media and meadia-body 
+				mt=margin top  d-flex=display flex -->
+				<div class="col-8 col-sm order-sm-first col-md">
+					<div class="media">
+						<img style="height:200px;" class="d-flex mr-3 img-thumbnail align-self-center"
+								src="img/burger.jpeg" alt="burger">
+						<div class="media-body">
+							<h2 class="mt-0">Desi Burger</h2>
+							<p class="d-none d-sm-block">A burger with indian spices and indian whole wheat bread.</p>
+						</div>
+					</div>
 				</div>
+			</div>
 
-				<div class="col-12 col-sm-6 col-md-3">
-					<h2>Desi Pizza</h2>
-					<p>A pizza with sauce made of indian spices and with topping of indian organic veggies</p>
+			<div class="row row-content align-items-center"> 
+				<div class="col-8 col-sm-12 ">
+					<div class="media">
+						<img  style="" class="d-flex mr-3 img-thumbnail align-self-center"
+								src="img/pizza.jpeg" alt="pizza">
+						<div class="media-body">
+							<h2 class="mt-0">Desi Pizza</h2>
+							<p class="d-none d-sm-block">A pizza with sauce made of indian spices and with topping of indian organic veggies</p>
+						</div>
+					</div>
 				</div>
+			</div>
 
-				<div class="col-12 col-sm-6 col-md-3">
-					<h2>Desi Burger Pizza</h2>
-					<p>a cobinatiion of burger and pizza with indian twist </p>
+			<div class="row row-content align-items-center"> 
+				<div class="col-8 col-sm-12">
+
+					<div class="media">
+						<img style="height: 200px;" class="d-flex mr-3 img-thumbnail align-self-center"
+								src="img/burgerpizza.jpeg" alt="burgerpizza" >
+						<div class="media-body">
+							<h2 class="mt-0">Desi Burger Pizza</h2>
+							<p class="d-none d-sm-block">a cobinatiion of burger and pizza with indian twist </p>
+						</div>
+					</div>
 				</div>
 			</div>
 
 			<div class="row row-content align-items-center">
-				<div class="col-12 col-sm-4 col-md-3">
+				<div class="col-12 col-sm-4 order-sm-last col-md-3">
 					<h3><b> Meet our Culinary Specialist</b></h3>
 				</div>
-				<div class="col-12 col-sm-4 col-md-3">
-					<h2>Sanjeev Kapoor</h2>
-					<h4>Executive Chef</h4>
-					<p>Award winning 5 start chef ,with years of experience and also judge of indias top cooking show </p>
+				<div class="col- col-sm order-sm-first col-md">
+					<div class="media">
+						<img style="width: 200px;height:200px;" class="d-flex mr-3 img-thumbnail align-self-center"
+								src="img/chef.png" alt="Sanjeev Kapoor">
+						<div class="media-body">
+							<h2 class="mt-0">Sanjeev Kapoor</h2>
+							<h4>Executive Chef</h4>
+							<p class="d-none d-sm-block">Award winning 5 start chef ,with years of experience and also judge of indias top cooking show 
+								</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
