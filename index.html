@@ -78,8 +78,12 @@
 				</div>
 
 				<!-- we can use img tag to add image ,class="img-fluid" for responsiveness -->
-				<div class="col-12 col-sm align-self-center">
+				<div class="col-12 col-sm-4 align-self-center">
 					<img src="img/logo.png" class="img-fluid" height="300" width="400">
+				</div>
+
+				<div class="col-12 col-sm-2 ">
+					<a href="#reserve" class="btn btn-light" role="button">Reserve Table</a>
 				</div>
 		</div>
 	</header>
@@ -98,12 +102,14 @@
 						<img style="height:200px;" class="d-flex mr-3 img-thumbnail align-self-center"
 								src="img/burger.jpeg" alt="burger">
 						<div class="media-body">
-							<h2 class="mt-0">Desi Burger</h2>
+							<h2 class="mt-0">Desi Burger <span class="badge badge-danger">HOT</span><span style="margin-left: 10px;" class="badge badge-pill badge-primary">100Rs</span></h2>
 							<p class="d-none d-sm-block">A burger with indian spices and indian whole wheat bread.</p>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<!-- we can add badges ,alert messages with dissmisal button(a cross),loading bar 		 -->
 
 			<div class="row row-content align-items-center"> 
 				<div class="col-8 col-sm-12 ">
@@ -111,7 +117,7 @@
 						<img  style="" class="d-flex mr-3 img-thumbnail align-self-center"
 								src="img/pizza.jpeg" alt="pizza">
 						<div class="media-body">
-							<h2 class="mt-0">Desi Pizza</h2>
+							<h2 class="mt-0">Desi Pizza <span class="badge badge-danger">HOT</span><span style="margin-left: 10px;" class="badge badge-pill badge-primary">300Rs</span></h2>
 							<p class="d-none d-sm-block">A pizza with sauce made of indian spices and with topping of indian organic veggies</p>
 						</div>
 					</div>
@@ -125,7 +131,7 @@
 						<img style="height: 200px;" class="d-flex mr-3 img-thumbnail align-self-center"
 								src="img/burgerpizza.jpeg" alt="burgerpizza" >
 						<div class="media-body">
-							<h2 class="mt-0">Desi Burger Pizza</h2>
+							<h2 class="mt-0">Desi Burger Pizza <span class="badge badge-danger">HOT</span><span style="margin-left: 10px;" class="badge badge-pill badge-primary">250Rs</span></h2>
 							<p class="d-none d-sm-block">a cobinatiion of burger and pizza with indian twist </p>
 						</div>
 					</div>
@@ -151,6 +157,68 @@
 			</div>
 
 		</div>
+
+		<div class="row row-content align-items-center align-self-center" id="reserve">
+			<div class="col-12 col-sm-10 offset-sm-2 ">
+				<div class="card ml">
+				<h3 class="card-header bg-primary text-white ">
+					Reserve a Table
+				</h3>
+					<div class="card-body">
+						<form action="">
+						<div class="form-group row">
+							<label for="number " class="col-md-2 col-form-label">Number of Guests</label>
+							<div class="col-offset-xs-1 col-md ">
+								<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+								<label class="form-check-label" for="inlineRadio1">1</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+								<label class="form-check-label" for="inlineRadio2">2</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+								<label class="form-check-label" for="inlineRadio3">3</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+								<label class="form-check-label" for="inlineRadio4">4</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+								<label class="form-check-label" for="inlineRadio5">5</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+								<label class="form-check-label" for="inlineRadio6">6</label>
+							  </div>
+							  </div>
+						</div>
+
+						<div class="form-group row">
+                            <label for="date and time" class="col-md-2 col-form-label">Date and Time</label>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                            </div>
+							<div class="col-md-5">
+                                <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                            </div>
+                        </div>
+
+						<div class="form-group row">
+                            <div class="col-8 offset-md-5 col-md-10">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 	<div>
