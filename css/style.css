@@ -52,6 +52,12 @@ body{
     border-style: solid;
     border-color: rgb(209, 31, 31);
 }
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
 
 .colours
 {
@@ -61,8 +67,5 @@ body{
     color: #81d0e8;
     color: #71a1d1;
 }
-.thead-dark{
-   
-    background-color: #2a2a72;
-}
+
 
